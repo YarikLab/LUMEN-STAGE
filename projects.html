@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Концептуальные проекты Lumen Stage: свет, концертная сцена и визуальная среда.">
+  <title>Проекты — Lumen Stage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</head>
+<body data-page="projects">
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Lumen Stage, главная"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>LUMEN<span class="brand-light">STAGE</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация"><a class="nav-link" href="index.html">Главная</a><a class="nav-link active" aria-current="page" href="projects.html">Проекты</a><a class="nav-link" href="contact.html">Контакты</a><a class="nav-cta" href="contact.html">Обсудить проект <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="page-hero spotlight-area">
+      <div class="page-hero-copy reveal"><p class="eyebrow"><span class="status-dot"></span> ИЗ ИДЕИ В ПРОСТРАНСТВО</p><h1>Проекты<span class="text-gradient"> /</span><br>концепции.</h1><p class="hero-description">Три направления, один принцип: каждый луч должен знать, зачем он включён.</p></div>
+      <div class="page-hero-mark reveal" aria-hidden="true"><span>SELECTED</span><strong>WORKS</strong><i>2026</i></div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="project-toolbar reveal"><div><p class="eyebrow">ВЫБРАННЫЕ КОНЦЕПЦИИ</p><p class="toolbar-note">Демонстрационные работы для учебного проекта</p></div><div class="filter-list" role="group" aria-label="Фильтр проектов"><button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Все <span>03</span></button><button class="filter-button" type="button" data-filter="live" aria-pressed="false">Live</button><button class="filter-button" type="button" data-filter="worship" aria-pressed="false">Worship</button><button class="filter-button" type="button" data-filter="space" aria-pressed="false">Space</button></div></div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card project-art-worship reveal" data-category="worship" data-project="0" tabindex="0" role="button" aria-label="Открыть проект Light / Worship">
+          <div class="project-art art-worship" aria-hidden="true"><div class="art-beam beam-a"></div><div class="art-beam beam-b"></div><div class="art-beam beam-c"></div><div class="art-horizon"></div><div class="art-silhouette"></div><span class="art-stamp">LIVE / 01</span></div>
+          <div class="project-info"><div><p class="project-kind">WORSHIP / СВЕТОВАЯ ДРАМАТУРГИЯ</p><h2>Light / Worship</h2><p>Мягкие переходы, воздушные лучи и фокус на эмоциональном моменте.</p></div><button type="button" class="round-arrow project-open" aria-label="Подробнее о Light / Worship">↗</button></div>
+        </article>
+        <article class="project-card project-art-live reveal" data-category="live" data-project="1" tabindex="0" role="button" aria-label="Открыть проект Pulse / Live">
+          <div class="project-art art-live" aria-hidden="true"><div class="art-beam beam-a"></div><div class="art-beam beam-b"></div><div class="art-beam beam-c"></div><div class="art-horizon"></div><div class="art-equalizer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-stamp">LIVE / 02</span></div>
+          <div class="project-info"><div><p class="project-kind">LIVE / КОНЦЕРТНАЯ СЦЕНА</p><h2>Pulse / Live</h2><p>Контрастная геометрия света, плотный ритм и динамичный центр сцены.</p></div><button type="button" class="round-arrow project-open" aria-label="Подробнее о Pulse / Live">↗</button></div>
+        </article>
+        <article class="project-card project-art-space reveal" data-category="space" data-project="2" tabindex="0" role="button" aria-label="Открыть проект Form / Space">
+          <div class="project-art art-space" aria-hidden="true"><div class="art-beam beam-a"></div><div class="art-beam beam-b"></div><div class="art-beam beam-c"></div><div class="art-horizon"></div><div class="art-frame"><i></i><i></i><i></i></div><span class="art-stamp">SPACE / 03</span></div>
+          <div class="project-info"><div><p class="project-kind">SPACE / СЦЕНИЧЕСКАЯ СРЕДА</p><h2>Form / Space</h2><p>Сдержанная архитектура, точные контуры и свет как часть формы.</p></div><button type="button" class="round-arrow project-open" aria-label="Подробнее о Form / Space">↗</button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>В этой категории пока нет проектов.</p>
+      <div class="projects-footnote reveal"><span class="status-dot"></span> Концепции разработаны для демонстрации возможностей интерфейса и не заявляются как реализованные мероприятия.</div>
+    </section>
+    <section class="wide-callout reveal"><div><p class="eyebrow">ЕСТЬ СВОЯ ЗАДАЧА?</p><h2>Давайте найдём<br>её визуальный язык.</h2></div><a class="button button-light" href="contact.html">Обсудить проект <span aria-hidden="true">↗</span></a><div class="callout-glow" aria-hidden="true"></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>LUMEN<span class="brand-light">STAGE</span></span></a><p>Концептуальное портфолио светового дизайна</p><span>© <span data-year></span> Lumen Stage</span></footer>
+  <div class="toast" id="site-toast" role="status" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="project-modal" hidden>
+    <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <button class="modal-close" type="button" aria-label="Закрыть окно">×</button>
+      <p class="eyebrow" id="modal-kind">КОНЦЕПЦИЯ</p><h2 id="modal-title">Название проекта</h2><p id="modal-description"></p>
+      <div class="modal-details"><div><span>НАСТРОЕНИЕ</span><strong id="modal-mood"></strong></div><div><span>СВЕТОВОЙ ПРИЁМ</span><strong id="modal-technique"></strong></div></div>
+      <div class="modal-controls"><button class="button button-outline" id="modal-prev" type="button">← Предыдущий</button><span id="modal-counter">01 / 03</span><button class="button button-outline" id="modal-next" type="button">Следующий →</button></div>
+      <p class="keyboard-hint">Клавиши ← → для переключения · Esc для закрытия</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Связаться с Lumen Stage и описать задачу по световому или сценическому дизайну.">
+  <title>Контакты — Lumen Stage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body data-page="contact">
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Lumen Stage, главная"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>LUMEN<span class="brand-light">STAGE</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация"><a class="nav-link" href="index.html">Главная</a><a class="nav-link" href="projects.html">Проекты</a><a class="nav-link active" aria-current="page" href="contact.html">Контакты</a><a class="nav-cta" href="#request-form">Обсудить проект <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero spotlight-area">
+      <div class="page-hero-copy reveal"><p class="eyebrow"><span class="status-dot"></span> НАЧНЁМ С ИДЕИ</p><h1>Расскажите,<br><span class="text-gradient">что задумали.</span></h1><p class="hero-description">Концерт, презентация, выступление или пока только мысль. Заполни короткую анкету, чтобы собрать вводные.</p></div>
+      <div class="contact-orbit reveal" aria-hidden="true"><div class="contact-orbit-ring ring-a"></div><div class="contact-orbit-ring ring-b"></div><div class="contact-core">LS<span>✳</span></div><span class="orbit-label orbit-label-a">IDEA</span><span class="orbit-label orbit-label-b">LIGHT</span></div>
+    </section>
+
+    <section class="section contact-layout" id="request-form">
+      <div class="contact-aside reveal"><p class="eyebrow">КОНТАКТ / 03</p><h2>Хороший проект начинается с правильных вопросов.</h2><p>Форма учебная и демонстрирует работу JavaScript: проверяет поля и показывает результат прямо на странице. Заявка никуда не отправляется.</p><div class="contact-note"><span class="note-icon">⌁</span><div><strong>Подсказка</strong><p>Можно использовать клавишу Tab для перехода по полям, Enter для отправки и Escape для очистки формы.</p></div></div><a class="text-link contact-back-link" href="projects.html">Сначала посмотреть проекты <span aria-hidden="true">→</span></a></div>
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-heading"><span>01 — 05</span><h2>Анкета проекта</h2></div>
+        <div class="form-row"><label for="name">Как к вам обращаться <span>*</span></label><input id="name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required minlength="2"><small class="field-error" id="name-error"></small></div>
+        <div class="form-row"><label for="email">Электронная почта <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required><small class="field-error" id="email-error"></small></div>
+        <div class="form-row"><label for="event-type">Тип мероприятия <span>*</span></label><select id="event-type" name="eventType" required><option value="">Выберите формат</option><option value="Концерт / Live">Концерт / Live</option><option value="Worship / музыкальное служение">Worship / музыкальное служение</option><option value="Корпоративное мероприятие">Корпоративное мероприятие</option><option value="Презентация / форум">Презентация / форум</option><option value="Другая концепция">Другая концепция</option></select><small class="field-error" id="event-type-error"></small></div>
+        <div class="form-row"><label for="scale">Примерный масштаб</label><select id="scale" name="scale"><option value="Пока не определён">Пока не определён</option><option value="До 100 гостей">До 100 гостей</option><option value="100–500 гостей">100–500 гостей</option><option value="500–2000 гостей">500–2000 гостей</option><option value="Более 2000 гостей">Более 2000 гостей</option></select></div>
+        <div class="form-row"><label for="message">Что важно учесть?</label><textarea id="message" name="message" rows="4" placeholder="Расскажите о площадке, музыке, сроках или настроении..." maxlength="500"></textarea><div class="textarea-meta"><small>Необязательно</small><small><span id="message-count">0</span> / 500</small></div></div>
+        <div class="form-actions"><button class="button button-primary" type="submit">Проверить анкету <span aria-hidden="true">↗</span></button><p>Поля со звёздочкой обязательны.</p></div>
+        <div class="form-success" id="form-success" role="status" aria-live="polite" hidden><span class="success-mark">✓</span><div><strong>Анкета заполнена!</strong><p id="success-text">Данные проверены в демонстрационном режиме.</p></div><button type="button" id="edit-form">Изменить</button></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>LUMEN<span class="brand-light">STAGE</span></span></a><p>Концептуальное портфолио светового дизайна</p><span>© <span data-year></span> Lumen Stage</span></footer>
+  <div class="toast" id="site-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
