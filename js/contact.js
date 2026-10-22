@@ -1,4 +1,4 @@
-/* Демонстрационная форма: проверяет поля, но не отправляет данные на сервер. */
+
 (() => {
   const form = document.querySelector('#contact-form');
   if (!form) return;
@@ -83,7 +83,7 @@
     nameInput.focus();
   });
 
-  // Escape очищает форму после подтверждения, чтобы случайно не потерять ввод.
+
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape' || form.contains(event.target) === false) return;
     const hasContent = [nameInput, emailInput, typeInput, messageInput].some((input) => input.value !== '');

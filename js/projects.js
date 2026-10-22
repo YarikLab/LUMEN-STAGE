@@ -1,4 +1,4 @@
-/* Фильтрация и клавиатурный просмотр концепций на странице проектов. */
+
 (() => {
   const cards = Array.from(document.querySelectorAll('.project-card'));
   const filterButtons = document.querySelectorAll('[data-filter]');
@@ -47,7 +47,6 @@
       if (shouldShow) {
         visibleCount += 1;
         card.classList.remove('is-visible');
-        // Небольшая пауза позволяет проиграть появление после фильтрации.
         window.requestAnimationFrame(() => card.classList.add('is-visible'));
       }
     });
@@ -95,7 +94,6 @@
   cards.forEach((card) => {
     const index = Number(card.dataset.project);
     card.addEventListener('click', (event) => {
-      // Не открываем окно дважды, если щёлкнули по вложенной кнопке.
       openModal(index, card);
     });
     card.addEventListener('keydown', (event) => {
@@ -114,7 +112,7 @@
     if (event.target === modal) closeModal();
   });
 
-  // Клавиши со стрелками переключают проекты, Escape закрывает просмотр.
+  
   document.addEventListener('keydown', (event) => {
     if (modal.hidden) return;
     if (event.key === 'Escape') {

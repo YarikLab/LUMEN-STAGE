@@ -1,4 +1,4 @@
-/* Общие интерактивные элементы для всех страниц сайта. */
+
 (() => {
   const body = document.body;
   const menuButton = document.querySelector('.menu-toggle');
@@ -7,12 +7,12 @@
   const toast = document.querySelector('#site-toast');
   let toastTimer;
 
-  // BOM: год берётся из системных часов браузера.
+  
   document.querySelectorAll('[data-year]').forEach((item) => {
     item.textContent = new Date().getFullYear();
   });
 
-  // Мобильное меню управляется кликом и отражает состояние через aria-expanded.
+  
   if (menuButton && navigation) {
     menuButton.addEventListener('click', () => {
       const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
@@ -38,14 +38,14 @@
     });
   }
 
-  // BOM: реакция шапки на прокрутку окна.
+  
   const updateHeader = () => {
     if (header) header.classList.toggle('scrolled', window.scrollY > 20);
   };
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();
 
-  // DOM: плавно показываем секции, когда они входят в область просмотра.
+  
   const revealItems = document.querySelectorAll('.reveal');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -66,7 +66,7 @@
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
 
-  // Событие мыши: управляем положением мягкого светового пятна в hero-блоках.
+  
   document.querySelectorAll('.spotlight-area').forEach((area) => {
     area.addEventListener('pointermove', (event) => {
       const bounds = area.getBoundingClientRect();
@@ -77,7 +77,7 @@
     area.addEventListener('pointerleave', () => area.classList.remove('pointer-active'));
   });
 
-  // Небольшая реакция карточек на указатель мыши.
+  
   document.querySelectorAll('.hover-card').forEach((card) => {
     card.addEventListener('pointerenter', () => card.classList.add('is-hovered'));
     card.addEventListener('pointerleave', () => card.classList.remove('is-hovered'));
@@ -91,8 +91,7 @@
     toastTimer = window.setTimeout(() => toast.classList.remove('show'), 2400);
   }
 
-  // Клавиатура: Space включает/выключает световой режим, Escape выключает его.
-  // Не перехватываем клавиши, когда пользователь работает с формой или кнопкой.
+  
   document.addEventListener('keydown', (event) => {
     const target = event.target;
     const isTyping = target.closest('input, textarea, select, button, a, [contenteditable="true"], [role="button"]');
